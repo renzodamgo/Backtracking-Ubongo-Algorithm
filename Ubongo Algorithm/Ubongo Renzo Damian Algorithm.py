@@ -1,5 +1,5 @@
 import numpy as np
-
+import time
 def crearPieza(x,y,pieza,num_rows,num_cols,i):
     num_rowsP, num_colsP = pieza.shape
     print(num_cols,num_rows)
@@ -22,7 +22,8 @@ def la_pieza_Encaja(sumaplantilla,i):
 
 iteracion = 0
 def probarPiezarec(x,y,piezas,plantilla,i):
-   
+    #
+    time.sleep(1)
     global iteracion 
     iteracion +=1
     
@@ -79,7 +80,7 @@ piezaz=np.array([[1],[1],[1]])
 #piezas = np.array([pieza,pieza3])
 #piezas = [pieza,pieza2,pieza3,pieza4]
 #piezas = [piezax,piezay,piezaz]
-piezas = [piezax,piezay,piezaz,pieza3]
+piezas = [piezaz,piezax,piezay,pieza3]
 #probarPieza(0,0,pieza,plantilla)
 probarPiezarec(0,0,piezas,plantilla,0)
 #piezas.shape[0]
